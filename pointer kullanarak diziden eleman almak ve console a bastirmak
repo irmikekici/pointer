@@ -1,0 +1,36 @@
+#include <stdio.h>
+#define MAX_SIZE 100
+
+int main()
+{
+
+    int arr[100];
+    int N;
+    int i;
+    int *ptr;
+    ptr=arr; //dizinin ilk elemaninin adresi
+
+
+
+
+    printf("Dizi kac elemanli olsun\n");
+    scanf("%d",&N);
+
+    printf("Lutfen elemanlari giriniz\n");
+    for(i=0;i<N;i++)//elemanlari almak icin acilan for dongusu
+    {
+        scanf("%d",ptr);
+        ptr++;//adres ile arttirma
+    }
+    ptr=arr;
+    printf("Degerlerim:\n");
+    for(i=0;i<N;i++)
+    {
+        printf("%d ",*ptr);//adresin gosterdigi deger
+        ptr++;
+    }
+
+    return 0;
+
+}
+
