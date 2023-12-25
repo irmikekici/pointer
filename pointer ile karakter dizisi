@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	char ir[100];
+	char *pointer;
+	
+	printf("Lutfen bir karakter dizisi giriniz\n");
+	gets(ir);
+	
+	for(pointer=ir;*pointer;pointer++)
+	{
+		
+		
+	}
+	printf("Dizimiz %s %d kadar karakter dizimizden oluşuyor",ir,pointer-ir);
+	
+	return 0;
+	
+	
+}
